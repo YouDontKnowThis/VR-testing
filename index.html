@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vsight / Web XR</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <h2>VR</h2>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About </a></li>
+          <li><a href="#">VR Experience</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- minimal loader shown until image descriptors are loaded -->
+    <div class="hotel">
+      <div class="hotel--desc">
+        <h2>Grand Hotel</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          accusantium inventore nemo sint qui sed aut, omnis quam ad corrupti
+          perspiciatis similique odio cum corporis quaerat et tempore, possimus
+          incidunt lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Architecto accusantium inventore nemo sint qui sed aut, omnis quam ad
+          corrupti perspiciatis similique odio cum corporis quaerat et tempore,
+          possimus incidunt.
+        </p>
+        <button id="btn">Make a tour</button>
+      </div>
+      <div class="hotel--room">
+        <a-scene
+          embedded
+          vr-mode-ui="enabled: false"
+          inspector
+          fog="type: linear; color: #AAA"
+          keyboard-shortcuts="enterVR: false"
+        >
+          <!-- Assets (Images, Videos, etc... ) -->
+          <a-assets>
+            <img id="room" src="./img/room.jpeg" />
+          </a-assets>
+
+          <!-- Sky -->
+          <a-sky src="#room"></a-sky>
+          <!-- Primitives -->
+
+          <!-- Ground -->
+        </a-scene>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 10px 40px;
+  height: 64px;
+  background-color: rgb(91, 16, 177);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > .logo h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 35px;
+}
+
+.header > .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  min-width: 350px;
+}
+
+.header > .navbar a {
+  color: rgb(224, 224, 224);
+  font-size: 14px;
+}
+
+.hotel {
+  padding: 10px 40px;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.hotel--desc {
+  width: 50%;
+}
+
+.hotel--desc > h2 {
+  text-transform: uppercase;
+  color: #333;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 10px;
+}
+
+.hotel--desc > p {
+  color: #666;
+  font-size: 15px;
+  padding: 0 15px;
+  line-height: 1.5;
+}
+
+.hotel--desc > button {
+  color: #eee;
+  background-color: rgb(91, 16, 177);
+  border: none;
+  margin: 10px;
+  font-size: 15px;
+  padding: 10px 30px;
+  border-radius: 4px;
+  transition: background 0.3s ease-out;
+  cursor: pointer;
+}
+.hotel--desc > button:hover {
+  outline: none;
+  background-color: rgb(67, 6, 138);
+}
+
+.hotel--room {
+  width: 40%;
+  border: 2px solid #ccc;
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  border-radius: 5px;
+}
