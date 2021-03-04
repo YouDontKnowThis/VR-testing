@@ -80,7 +80,7 @@ a {
   color: #eee;
   background-color: rgb(91, 16, 177);
   border: none;
-  margin: 10px;
+  margin: 20px 10px;
   font-size: 15px;
   padding: 10px 30px;
   border-radius: 4px;
@@ -93,10 +93,29 @@ a {
 }
 
 .hotel--room {
-  width: 40%;
+  width: 30%;
   border: 2px solid #ccc;
   padding: 10px;
   background-color: #eee;
   overflow: hidden;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .header > .navbar {
+    display: none;
+  }
+  .hotel {
+    padding: 30px;
+    width: 100%;
+    display: inline;
+    /* align-items: center; */
+  }
+  .hotel--desc {
+    width: 100%;
+  }
+  .hotel--room {
+    width: 100%;
+    height: 40vh;
+  }
 }
